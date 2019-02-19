@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Mystery!</title>
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added link to the Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- Added Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">;
+
+    <!-- Added links to custom style sheets -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Let the game begin -->
+
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Crystal Mystery!</h1>
+            </div>
+        </div>
+        </br>
+
+        <!-- Here are the game instructions -->
+
+        <div class="row">
+            <div class="col-md-12">
+                <h4> Click a crystal to begin playing. The value of each crystal is a mystery: Your goal is to get a score equal to the Target Number! Crystal values change after each game so be careful!</h2>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Here we have the scoreboard -->
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card-body">
+                    <h2 class="card-header">Target Number</h2>
+                    <p class="card-text"> <span id="targetNumber"></span></p>
+                </div>
+            </div>
+            <div class="col-md-6" id="gutter">
+                <div class="card-body">
+                    <h2 class="card-header">Your Score</h2>
+                    <p class="card-text"> <span id="userScore"></span></p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>    
+        <div class="row">
+            <div class="col-md-6 justify-content-center">
+                <h2 class="card-header">Wins</h2>
+                <p class="card-text"> <span id="countWins"></span></p>
+            </div>
+            <div class="col-md-6 justify-content-center">
+                <h2 class="card-header">Losses</h2>
+                <p class="card-text"> <span id="countLosses"></span></p>
+            </div>
+        </div>
+        <br>
+        <br>      
+        <br>    
+               <br>
+        <br>      
+        <br>     
+        <!--Here we have the game controls for the user to click -->
+
+        <div class="card-deck">
+            <div class="card"  id="gold">
+                <img src="assets/images/gold.gif" class="card-img-top" alt="gold">
+                <div class="card-body">
+                    <h5 class="card-title">Gold Crystal</h5>
+                </div>
+            </div>
+            <div class="card" id="red" >
+                <img src="assets/images/red.gif" class="card-img-top" alt="red">
+                <div class="card-body">
+                    <h5 class="card-title">Red Crystal</h5>
+                </div>
+            </div>
+            <div class="card" id="blue">
+                <img src="assets/images/blue.gif" class="card-img-top" alt="blue">
+                <div class="card-body">
+                    <h5 class="card-title">Blue Crystal</h5>
+                </div>
+            </div>
+            <div class="card" id="white">
+                <img src="assets/images/white.gif" class="card-img-top" alt="white">
+                <div class="card-body">
+                    <h5 class="card-title">White Crystal</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to your JavaScript -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>

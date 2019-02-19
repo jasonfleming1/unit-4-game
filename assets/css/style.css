@@ -1,9 +1,12 @@
-/* Program Stylesheets */
+/* Global Styles */
 
-body {
-    text-align: center;
-}
+    body {
+        text-align: center;
+    }
 
+    .row {
+        margin-bottom: 20px;
+    }
 
 /* game control styles */
 
@@ -19,4 +22,36 @@ body {
     
         .card-title {
             text-align: center;
+        }
+
+    /* card text */
+
+        .card-text {
+            font-weight: bold;
+            padding-top: 30px;
+            font-size: 30px;
+        }
+
+    /* crystal effects */
+
+        #gold:hover {
+            transition-duration: .2s, 1s;
+            transition-timing-function: linear, ease-in;
+            background: gold;
+        }
+        #red:hover {
+            transition-duration: .2s, 1s;
+            transition-timing-function: linear, ease-in;
+            background: rgba(238, 82, 82, 0.794);
+        }
+        #blue:hover {
+            transition-duration: .2s, 1s;
+            transition-timing-function: linear, ease-in;
+            background: rgb(133, 208, 238);
+        }
+        #white:hover {
+            transition-duration: .2s, 1s;
+            transition-timing-function: linear, ease-in;
+            background: black;
+            color: white;
         }
