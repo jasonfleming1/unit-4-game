@@ -39,6 +39,19 @@
             transition-timing-function: linear, ease-in;
             background: gold;
         }
+
+        #gold:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -35px 0 0 -35px;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            opacity: 0;
+            pointer-events: none;
+        }
         #red:hover {
             transition-duration: .2s, 1s;
             transition-timing-function: linear, ease-in;
