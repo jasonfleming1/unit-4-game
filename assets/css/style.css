@@ -1,0 +1,22 @@
+/* Program Stylesheets */
+
+body {
+    text-align: center;
+}
+
+
+/* game control styles */
+
+     /* control card images */
+
+        .card-img-top {
+            width: 100%;
+            height: 10vw;
+            object-fit: cover;
+        }
+
+    /* card image headers */
+    
+        .card-title {
+            text-align: center;
+        }
